@@ -1,6 +1,7 @@
 import { useState } from "react";
 import QuestionsCard from "./QuestionsCard";
 import fixQuotes from "./Utils";
+import { nanoid } from "nanoid";
 
 export default function QuestionsPage(props) {
   const [answers, setAnswers] = useState(0);
@@ -9,12 +10,11 @@ export default function QuestionsPage(props) {
 
   const questionCards = props.questions.map((item) => {
     return (
-      <>
-        <QuestionsCard
-          question={fixQuotes(item.question)}
-          answers={[...item.incorrect_answers, item.correct_answer]}
-        />
-      </>
+      <QuestionsCard
+        question={fixQuotes(item.question)}
+        answers={[...item.incorrect_answers, item.correct_answer]}
+        key={nanoid()}
+      />
     );
   });
 
