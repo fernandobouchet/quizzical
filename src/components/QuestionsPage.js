@@ -1,12 +1,12 @@
 import QuestionsCard from "./QuestionsCard";
+import fixQuotes from "./Utils";
 
 export default function QuestionsPage(props) {
-  console.log(props);
   const questionCards = props.questions.map((item) => {
     return (
       <>
         <QuestionsCard
-          question={item.question}
+          question={fixQuotes(item.question)}
           answers={[...item.incorrect_answers, item.correct_answer]}
         />
       </>

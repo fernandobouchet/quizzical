@@ -14,7 +14,6 @@ export default function Main() {
         );
         const data = await res.json();
         setQuestions(data.results);
-        console.log(questions);
       } catch (error) {
         console.log(error);
       }
