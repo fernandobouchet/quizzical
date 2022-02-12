@@ -6,18 +6,19 @@ export default function Main() {
 
   const [startGame, setStartGame] = useState(false);
 
-  useEffect(() => {
-    async function getQuestions() {
-      try {
-        const res = await fetch(
-          "https://opentdb.com/api.php?amount=5&category=11&difficulty=easy&type=multiple"
-        );
-        const data = await res.json();
-        setQuestions(data.results);
-      } catch (error) {
-        console.log(error);
-      }
+  async function getQuestions() {
+    try {
+      const res = await fetch(
+        "https://opentdb.com/api.php?amount=5&category=11&difficulty=easy&type=multiple"
+      );
+      const data = await res.json();
+      setQuestions(data.results);
+    } catch (error) {
+      console.log(error);
     }
+  }
+
+  useEffect(() => {
     getQuestions();
   }, []);
 
@@ -25,10 +26,16 @@ export default function Main() {
     setStartGame(true ? true : false);
   }
 
+  function restartGame() {
+    getQuestions();
+  }
   return (
     <>
       {startGame && questions.length > 1 ? (
-        <QuestionsPage questions={questions} />
+        <QuestionsPage
+          questions={questions}
+          restartGame={() => restartGame()}
+        />
       ) : (
         <>
           <h1 className="main-tittle">Quizzical</h1>
