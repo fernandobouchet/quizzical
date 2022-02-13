@@ -1,7 +1,15 @@
 .answer-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
   background-color: white;
-  border-color: #293264;
   color: #293264;
   border-radius: 7px;
   padding: 1%;
+  cursor: pointer;
+  border: 0.8px solid #4d5b9e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  min-width: 10%;
 }

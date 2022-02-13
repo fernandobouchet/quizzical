@@ -15,7 +15,7 @@ export default function QuestionsCard(props) {
   });
 
   return (
-    <section className="questions-container">
+    <section className="question-container">
       <h2 className="question">{props.question}</h2>
       <section className="answers-container">{answerButtons}</section>
     </section>

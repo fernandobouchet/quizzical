@@ -42,7 +42,7 @@ export default function Main() {
           <div id="main">
             <h1 className="main-tittle">Quizzical</h1>
             <h2 className="main-description">A simple movies quiz</h2>
-            <button className="main-start-button" onClick={handleClick}>
+            <button className="option-buttons" onClick={handleClick}>
               Start Quiz
             </button>
           </div>

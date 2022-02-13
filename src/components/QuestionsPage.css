@@ -1,5 +1,5 @@
 .question-page-main {
-  padding: 5% 10%;
+  padding: 15% 10%;
   display: flex;
   flex-direction: column;
   color: #293264;
@@ -8,4 +8,29 @@
 
 .bottom-questions-page {
   padding-top: 35px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.score-result {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.page-question-buttons {
+  background-color: #4d5b9e;
+  color: white;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0 none;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
 }

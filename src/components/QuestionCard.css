@@ -3,3 +3,16 @@
   justify-content: center;
   gap: 20px;
 }
+
+.question-container {
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-color: #dbdef0;
+  border-bottom-width: 1px;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}

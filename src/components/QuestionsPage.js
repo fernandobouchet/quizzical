@@ -37,6 +37,7 @@ export default function QuestionsPage(props) {
   function handlePlayAgain() {
     props.restartGame();
     setCheckAnswer(false);
+    setAnswers([]);
   }
 
   return (
@@ -44,16 +45,18 @@ export default function QuestionsPage(props) {
       <div className="questions-container">{questionCards}</div>
       <div className="bottom-questions-page">
         {!checkAnswer ? (
-          <button className="check-answer-button" onClick={handleAnswer}>
+          <button className="page-question-buttons" onClick={handleAnswer}>
             Check answers
           </button>
         ) : (
-          <>
-            <h2>You scored {answers.length}/5 answers</h2>
-            <button className="play-again" onClick={handlePlayAgain}>
+          <div className="score-container">
+            <h2 className="score-result">
+              You scored {answers.length}/5 correct answers
+            </h2>
+            <button className="page-question-buttons" onClick={handlePlayAgain}>
               Play again
             </button>
-          </>
+          </div>
         )}
       </div>
     </div>
