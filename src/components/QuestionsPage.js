@@ -2,6 +2,7 @@ import { useState } from "react";
 import QuestionsCard from "./QuestionsCard";
 import fixQuotes from "./Utils";
 import { nanoid } from "nanoid";
+import "./QuestionsPage.css";
 
 export default function QuestionsPage(props) {
   const [answers, setAnswers] = useState([]);
@@ -39,7 +40,7 @@ export default function QuestionsPage(props) {
   }
 
   return (
-    <>
+    <div className="question-page-main">
       <div className="questions-container">{questionCards}</div>
       <div className="bottom-questions-page">
         {!checkAnswer ? (
@@ -55,6 +56,6 @@ export default function QuestionsPage(props) {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 }

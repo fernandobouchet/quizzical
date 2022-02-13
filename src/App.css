@@ -1,3 +1,8 @@
 .App {
+  font-family: "Inter";
   text-align: center;
+  min-height: 100vh;
+  background-image: url(./images/top.png), url(./images/bottom.png);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
 }

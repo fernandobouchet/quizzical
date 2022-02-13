@@ -1,4 +1,5 @@
 import fixQuotes from "./Utils";
+import "./answersButtons.css";
 
 export default function AnswerButtons(props) {
   function handleClick() {

@@ -1,0 +1,11 @@
+.question-page-main {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  color: #293264;
+  font-size: 16px;
+}
+
+.bottom-questions-page {
+  padding-top: 35px;
+}
