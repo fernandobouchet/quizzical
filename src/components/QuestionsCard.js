@@ -3,7 +3,14 @@ import { nanoid } from "nanoid";
 
 export default function QuestionsCard(props) {
   const answerButtons = props.answers.map((answer) => {
-    return <AnswerButtons answer={answer} key={nanoid()} />;
+    return (
+      <AnswerButtons
+        answer={answer}
+        correctAnswer={props.correctAnswer}
+        key={nanoid()}
+        choose={props.choose}
+      />
+    );
   });
 
   return (
