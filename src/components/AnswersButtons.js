@@ -3,9 +3,12 @@ import "./answersButtons.css";
 
 export default function AnswerButtons(props) {
   function handleClick(e) {
+    e.target.className === "answer-button"
+      ? (e.target.className = "selected")
+      : (e.target.className = "answer-button");
+
     if (props.answer === props.correctAnswer) {
       props.choose(props.correctAnswer);
-      e.event.target.style("background-color:red");
     }
   }
   return (

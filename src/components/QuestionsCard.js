@@ -3,7 +3,8 @@ import { nanoid } from "nanoid";
 import "./QuestionCard.css";
 
 export default function QuestionsCard(props) {
-  const answerButtons = props.answers.map((answer) => {
+  const answers = props.answers.sort(() => Math.random() - 0.5);
+  const answerButtons = answers.map((answer) => {
     return (
       <AnswerButtons
         answer={answer}

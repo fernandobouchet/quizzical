@@ -12,4 +12,22 @@
   box-sizing: border-box;
   border-radius: 8px;
   min-width: 10%;
+  min-height: 2rem;
+}
+
+.selected {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  color: #293264;
+  border-radius: 7px;
+  padding: 1%;
+  cursor: pointer;
+  border: 0.8px #4d5b9e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  min-width: 10%;
+  min-height: 2rem;
+  background: #d6dbf5;
 }
