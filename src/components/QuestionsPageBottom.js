@@ -8,6 +8,7 @@ export default function QuestionsPageBottom(props) {
   function handleAnswer() {
     setCheckAnswer(true);
     setcorrectAnswers(props.savedScore);
+    props.showAnswers();
   }
 
   function handlePlayAgain() {

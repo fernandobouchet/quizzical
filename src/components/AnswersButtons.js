@@ -13,7 +13,11 @@ export default function AnswerButtons(props) {
   }
   return (
     <>
-      <button className="answer-button" onClick={handleClick}>
+      <button
+        className="answer-button"
+        onClick={handleClick}
+        value={props.answer}
+      >
         {fixQuotes(props.answer)}
       </button>
     </>
