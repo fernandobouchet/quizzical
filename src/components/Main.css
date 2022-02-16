@@ -1,8 +1,9 @@
 #main {
   display: flex;
   flex-direction: column;
-  padding-top: 25%;
   align-items: center;
+  height: 100vh;
+  justify-content: center;
   color: #293264;
 }
 
