@@ -25,6 +25,7 @@ export default function QuestionsPage(props) {
       } else {
         button.className = "disabled";
       }
+      button.disabled = true;
     });
     const selectedButtons = [...document.getElementsByClassName("selected")];
     selectedButtons.forEach((button) => {
@@ -33,6 +34,7 @@ export default function QuestionsPage(props) {
       } else {
         button.className = "selected-false";
       }
+      button.disabled = true;
     });
   }
 

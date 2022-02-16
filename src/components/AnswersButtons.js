@@ -3,6 +3,7 @@ import "./answersButtons.css";
 
 export default function AnswerButtons(props) {
   function handleClick(e) {
+    console.log(e.target);
     e.target.className === "answer-button"
       ? (e.target.className = "selected")
       : (e.target.className = "answer-button");
