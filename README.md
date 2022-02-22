@@ -16,7 +16,7 @@ Design was based from the following [Figma template](https://www.figma.com/file/
 
 ```
 git clone https://github.com/fernandobouchet/quizzical
-cd travel-journal
+cd quizzical
 npm install
 npm start
 ```
