@@ -10,7 +10,7 @@ Design was based from the following [Figma template](https://www.figma.com/file/
 
 ## Screenshots
 
-![App Screenshot](https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.png?raw=true)
+![App Screenshot](https://github.com/fernandobouchet/quizzical/blob/main/quizzical_preview.jpg?raw=true)
 
 ## Getting started
 
