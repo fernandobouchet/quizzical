@@ -2,8 +2,13 @@ import fixQuotes from "./Utils";
 import "./answersButtons.css";
 
 export default function AnswerButtons(props) {
+  function resetClass(e) {
+    const buttons = document.getElementsByName(e.target.name);
+    buttons.forEach((button) => (button.className = "answer-button"));
+  }
+
   function handleClick(e) {
-    console.log(e.target);
+    resetClass(e);
     e.target.className === "answer-button"
       ? (e.target.className = "selected")
       : (e.target.className = "answer-button");
@@ -18,6 +23,7 @@ export default function AnswerButtons(props) {
         className="answer-button"
         onClick={handleClick}
         value={props.answer}
+        name={props.question}
       >
         {fixQuotes(props.answer)}
       </button>

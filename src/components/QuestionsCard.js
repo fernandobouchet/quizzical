@@ -7,6 +7,7 @@ export default function QuestionsCard(props) {
   const answerButtons = answers.map((answer) => {
     return (
       <AnswerButtons
+        question={props.question}
         answer={answer}
         correctAnswer={props.correctAnswer}
         key={nanoid()}
