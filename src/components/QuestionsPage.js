@@ -21,18 +21,18 @@ export default function QuestionsPage(props) {
     const answerButtons = [...document.getElementsByClassName("answer-button")];
     answerButtons.forEach((button) => {
       if (correctAnswers.includes(button.value)) {
-        button.className = "selected-true";
+        button.className += " selected-true";
       } else {
-        button.className = "disabled";
+        button.className += " disabled";
       }
       button.disabled = true;
     });
     const selectedButtons = [...document.getElementsByClassName("selected")];
     selectedButtons.forEach((button) => {
       if (correctAnswers.includes(button.value)) {
-        button.className = "selected-true";
+        button.className += " selected-true";
       } else {
-        button.className = "selected-false";
+        button.className += " selected-false";
       }
       button.disabled = true;
     });

@@ -9,9 +9,7 @@ export default function AnswerButtons(props) {
 
   function handleClick(e) {
     resetClass(e);
-    e.target.className === "answer-button"
-      ? (e.target.className = "selected")
-      : (e.target.className = "answer-button");
+    e.target.className += " selected";
 
     if (props.answer === props.correctAnswer) {
       props.choose(props.correctAnswer);

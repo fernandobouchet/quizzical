@@ -3,7 +3,7 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 12px;
-  background-color: white;
+  background: white;
   color: #293264;
   border-radius: 7px;
   padding: 1%;
@@ -16,70 +16,21 @@
 }
 
 .selected {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 12px;
-  color: #293264;
-  border-radius: 7px;
-  padding: 1%;
-  cursor: pointer;
-  border: 0.8px #4d5b9e;
-  box-sizing: border-box;
-  border-radius: 8px;
-  min-width: 10%;
-  min-height: 2rem;
+  border: none;
   background: #d6dbf5;
 }
 
 .disabled {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 12px;
-  color: #293264;
-  border-radius: 7px;
-  padding: 1%;
-  cursor: pointer;
-  border: 0.8px solid #4d5b9e;
-  box-sizing: border-box;
-  border-radius: 8px;
-  min-width: 10%;
-  min-height: 2rem;
   background: #f5f7fb;
   opacity: 0.5;
 }
 
 .selected-true {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 12px;
-  color: #293264;
-  border-radius: 7px;
-  padding: 1%;
-  cursor: pointer;
-  border: 0.8px #4d5b9e;
-  box-sizing: border-box;
-  border-radius: 8px;
-  min-width: 10%;
-  min-height: 2rem;
+  border: none;
   background: #94d7a2;
 }
 
 .selected-false {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 12px;
-  color: #293264;
-  border-radius: 7px;
-  padding: 1%;
-  cursor: pointer;
-  border: 0.8px #4d5b9e;
-  box-sizing: border-box;
-  border-radius: 8px;
-  min-width: 10%;
-  min-height: 2rem;
+  border: none;
   background: #f8bcbc;
 }
