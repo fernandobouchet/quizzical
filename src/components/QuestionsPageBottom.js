@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Confetti from "react-confetti";
 
 export default function QuestionsPageBottom(props) {
   const [correctAnswers, setcorrectAnswers] = useState([]);
@@ -27,6 +28,7 @@ export default function QuestionsPageBottom(props) {
         </>
       ) : (
         <div className="score-container">
+          {correctAnswers.length === 5 && <Confetti />}
           <h2 className="score-result">
             You scored {correctAnswers.length}/5 correct answers
           </h2>
