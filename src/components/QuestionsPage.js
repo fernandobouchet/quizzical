@@ -8,7 +8,7 @@ export default function QuestionsPage(props) {
   const savedScore = [];
 
   const correctAnswers = [
-    ...props.questions.map((question) => question.correct_answer),
+    ...props.questions.map((question) => fixQuotes(question.correct_answer)),
   ];
 
   function saveScore(answerToInsert) {
@@ -42,7 +42,7 @@ export default function QuestionsPage(props) {
     return (
       <QuestionsCard
         question={fixQuotes(item.question)}
-        answers={[...item.incorrect_answers, item.correct_answer]}
+        answers={[...item.incorrect_answers, fixQuotes(item.correct_answer)]}
         correctAnswer={fixQuotes(item.correct_answer)}
         choose={saveScore}
         key={nanoid()}

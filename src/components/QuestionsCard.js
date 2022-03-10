@@ -1,6 +1,7 @@
 import AnswerButtons from "./AnswersButtons";
 import { nanoid } from "nanoid";
 import "./QuestionCard.css";
+import fixQuotes from "./Utils";
 
 export default function QuestionsCard(props) {
   const answers = props.answers.sort(() => Math.random() - 0.5);
@@ -8,7 +9,7 @@ export default function QuestionsCard(props) {
     return (
       <AnswerButtons
         question={props.question}
-        answer={answer}
+        answer={fixQuotes(answer)}
         correctAnswer={props.correctAnswer}
         key={nanoid()}
         choose={props.choose}
