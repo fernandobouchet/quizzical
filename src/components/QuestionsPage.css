@@ -35,3 +35,9 @@
   font-size: 10.24px;
   line-height: 12px;
 }
+
+@media (max-width: 480px) {
+  .bottom-questions-page {
+    padding-top: 20px;
+  }
+}

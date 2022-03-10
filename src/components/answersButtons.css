@@ -34,3 +34,10 @@
   border: none;
   background: #f8bcbc;
 }
+
+@media (max-width: 480px) {
+  .answer-button {
+    font-size: 9px;
+    width: 4.3rem;
+  }
+}
